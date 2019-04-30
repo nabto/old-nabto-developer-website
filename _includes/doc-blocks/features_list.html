@@ -1,0 +1,14 @@
+<ul class="features-list list-unstyled mb-0">
+	{% for item in include.content_data %}
+	<li>
+		<div class="features-card d-flex align-items-center">
+			<div class="entry-icon">
+				<img src="{{ site.url }}/{{ item.img_src }}" alt="{{ item.img_alt }}" width="{{ item.img_width }}" height="{{ item.img_height }}">
+			</div>
+			<div class="entry-body">
+				<h4>{{ item.heading }}</h4>
+			</div>
+		</div>
+	</li>
+	{% endfor %}
+</ul>

@@ -1,0 +1,3 @@
+- collapse_heading: 'lorem Ipsum'
+  sub_collapse: 
+    - 'Collapse item'

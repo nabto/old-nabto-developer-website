@@ -1,0 +1,7 @@
+<ul id="nav" class="d-flex list-unstyled mb-0 text-uppercase">
+	{% for link in site.data.navigations.main_nav %}
+		<li class="{% if page.url == link.url %}active{% elsif page.page_data_flag and link.title == 'Developer' %}active{% endif %}">
+			<a href="{{ site.url }}{{ link.url }}">{{ link.title }}</a>
+		</li>
+	{% endfor %}
+</ul>

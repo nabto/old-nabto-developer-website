@@ -1,0 +1,29 @@
+---
+layout: documentation
+title: Documentation
+---
+
+<div class="row">
+	<div class="col-12">
+		<header class="intro-header">
+			<h1 class="font-weight-light">Nabto by platform</h1>
+			<p>Lorem ipsum dolor inverti est em ipsum dolor inverti conversa symposis dolor inverti est em ipsum dolor inverti conversa symposis</p>
+		</header>
+		{% include doc-blocks/intro_list.html  content_data = site.data.documentation_content.intro_list add_class = 'three-column' %}
+	</div>
+</div>
+<section class="features-section bg-light">
+	<header>
+		<h2 class="features-heading font-weight-light">Nabto features</h2>
+	</header>
+	<div class="features-grid">
+		<div class="entry-item">
+			<h3 class="text-uppercase">Client features</h3>
+			{% include doc-blocks/features_list.html  content_data = site.data.documentation_content.client_features_list %}
+		</div>
+		<div class="entry-item">
+			<h3 class="text-uppercase">Embedded device features</h3>
+			{% include doc-blocks/features_list.html  content_data = site.data.documentation_content.embedded_device_features_list %}
+		</div>
+	</div>
+</section>

@@ -1,0 +1,22 @@
+- collapse_heading: 'iOS Client SDK'
+  sub_collapse: 
+    - 'Profile Management'
+    - 'RPC'
+    - 'Streaming'
+    - 'Tunnels'
+    - 'Push'
+- collapse_heading: 'Android Client SDK'
+  sub_collapse:
+    - 'Collapse item'
+- collapse_heading: 'Cordova / Ionic Client SDK'
+  sub_collapse:
+    - 'Collapse item'
+- collapse_heading: 'C# / .NET Client SDK'
+  sub_collapse:
+    - 'Collapse item'
+- collapse_heading: 'Plain C Client SDK'
+  sub_collapse:
+    - 'Collapse item'
+- collapse_heading: 'Embedded Device SDK'
+  sub_collapse:
+    - 'Collapse item'

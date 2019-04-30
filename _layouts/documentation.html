@@ -1,0 +1,41 @@
+---
+layout: default
+---
+
+<header class="page-header bg-warning">
+	<div class="container">
+		<h1 class="page-title text-white text-uppercase font-weight-light mb-0">Documentation</h1>
+	</div>
+</header>
+<div class="container">
+	<nav class="nested-nav-wrap">
+		<ul class="nested-nav-list list-unstyled d-flex">
+			{% for link in site.data.navigations.main_nav %}
+				{% for nested_page in link.nested_pages %}
+					{% if nested_page.url == false %}
+						<li class="{% if page.url == link.url %}active{% endif %}">
+							<a href="{{ site.url }}{{ link.url}}">{{ nested_page.title }}</strong></a>
+						</li>
+					{% else %}
+						<li class="{% if page.url contains nested_page.url and page.url != false %}active{% elsif nested_page.url contains page.page_data_flag %}active{% endif %}">
+							<a href="{{ site.url }}{{ link.url | remove: ".html" }}{{ nested_page.url }}">{{ nested_page.title }}</strong></a>
+						</li>
+					{% endif %}
+				{% endfor %}
+			{% endfor %}
+		</ul>
+	</nav>
+	{% if page.url == '/developer.html' %}
+		{{ content }}
+	{% endif %}
+	{% if page.url != '/developer.html' %}
+		{% case page.page_data_flag %}
+			{% when 'guides' %}
+				{% include doc-blocks/doc-block.html collection_data = site.guides collapse_data = site.data.guides-collapse-headings %}
+			{% when 'api-reference' %}
+				{% include doc-blocks/doc-block.html collection_data = site.api-reference collapse_data = site.data.api-reference-collapse-headings %}
+			{% when 'tutorials' %}
+				{% include doc-blocks/doc-block.html collection_data = site.tutorials collapse_data = site.data.tutorials-collapse-headings %}
+		{% endcase %}
+	{% endif %}
+</div>

@@ -1,0 +1,39 @@
+title: Nabto
+email: support@nabto.com
+description: >- # this means to ignore newlines until "baseurl:"
+  Nabto Developer documentation: Getting started guides, API references and tutorials. 
+baseurl: "/nabto-developer-website" # the subpath of your site, e.g. /blog
+url: "nabto.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: nabto_com
+github_username:  nabto
+
+# Build settings
+markdown: kramdown
+
+highlighter: rouge
+
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-tidy
+
+collections:
+  guides:
+    output: true
+  api-reference:
+    output: true
+  tutorials:
+    output: true
+
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - scss

@@ -1,0 +1,37 @@
+# ---------------------------------------------------------
+#  Main Navigation Site Links
+# ---------------------------------------------------------
+
+main_nav:
+  - title: 'solution'
+    url: '/solution.html'
+
+  - title: 'Developer'
+    url: '/developer.html'
+    nested_pages: 
+      - title: 'Overview'
+        url: false
+
+      - title: 'Guides'
+        url: '/guides.html'
+
+      - title: 'API Reference'
+        url: '/api-reference.html'
+
+      - title: 'Tutorials'
+        url: '/tutorials.html'
+
+  - title: 'References'
+    url: '/references.html'
+
+  - title: 'Partners'
+    url: '/partners.html'
+
+  - title: 'pricing'
+    url: '/pricing.html'
+
+  - title: 'news'
+    url: '/news.html'
+
+  - title: 'blog'
+    url: '/blog.html'
