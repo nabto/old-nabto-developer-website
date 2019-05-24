@@ -1,5 +1,6 @@
 {% assign sort_collection = include.collection_data | sort: 'position' %}
 <div class="doc-wrap">
+
 	<nav class="doc-nav">
 		<ul class="doc-nav-list list-unstyled md-0">
 			{% for guide in sort_collection %}
@@ -11,10 +12,10 @@
 			{% endfor %}
 			<!-- first livel of collapse -->
 			{% for collapse in include.collapse_data %}
-				<li>
+			<li>
 					<button type="button" data-toggle="collapse" data-target="#{{ page.title | downcase | replace: " ", "-" }}-{{ collapse.collapse_heading | downcase | replace: " ", "-" }}">{{ collapse.collapse_heading }}</button>
 					<div class="collapse {% for show in sort_collection %}{% if page.url == show.permalink and show.in_collapse == collapse.collapse_heading %}show{% endif %}{% endfor %}" id="{{ page.title | downcase | replace: " ", "-" }}-{{ collapse.collapse_heading | downcase | replace: " ", "-" }}">
-						<!-- link without collapse -->
+					  <!-- link without collapse -->
 						<ul class="sub-nav-list list-unstyled md-0">
 							{% for item in sort_collection %}
 								{% if item.in_collapse == collapse.collapse_heading and item.in_subcollapse == false %}
@@ -32,7 +33,8 @@
 										<ul class="last-nav-list list-unstyled md-0">
 											{% for item in sort_collection %}
 												{% if sub_item == item.in_subcollapse and item.in_collapse == collapse.collapse_heading  %}
-												<li>
+											<li>
+                                                                                          <!-- title from sub document's title attribute -->
 													<a class="{% if item.permalink == page.permalink %}active{% endif %}" href="{{ site.url }}{{ item.permalink }}">{{item.title}}</a>
 												</li>
 												{% endif %}

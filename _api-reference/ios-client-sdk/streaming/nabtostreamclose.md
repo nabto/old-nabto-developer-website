@@ -35,7 +35,7 @@ anchor-list:
 {:#description}
 ## DESCRIPTION
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium eveniet beatae a natus excepturi nostrum autem, esse, sed expedita eum distinctio neque ipsam laborum magnam exercitationem animi pariatur quae, voluptate illo. Neque, cum, nesciunt. Eaque, aliquam. Nesciunt, nostrum maxime quasi. 
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium eveniet beatae a natus excepturi nostrum autem, esse, sed expedita eum distinctio neque ipsam laborum magnam exercitationem animi pariatur quae, voluptate illo. Neque, cum, nesciunt. Eaque, aliquam. Nesciunt, nostrum maxime quasi.
 
 {:#declaration}
 ## DECLARATION
@@ -95,11 +95,11 @@ nabto_status_t nabtoStreamOpen(NabtoStreamHandle* handle, NabtoSessionsnabto_sta
 ```
 void helloNabtoStream() {
 	nabto_status_t st; // in all of the below: handle error and
-	abort if st != NABTO_OK 
+	abort if st != NABTO_OK
 	st = nabtoStartup(NULL);
 
 	nabto_session_t session;
-	nabto_status_t st = nabtoOpenSession(&session, 
+	nabto_status_t st = nabtoOpenSession(&session,
 	“user@example.org”, “12345678”);
 
 	nabto_stream_t stream;

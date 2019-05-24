@@ -35,7 +35,7 @@ anchor-list:
 {:#description}
 ## DESCRIPTION
 
-Opens a stream on an existing session to a Nabto enabled device. This function returns a stream handle that must be used in subsequent client API invocations. The caller must call nabtoStreamClose when the stream (handle) is no longer needed. An open session handle must have been created prior to calling this function. 
+Opens a stream on an existing session to a Nabto enabled device. This function returns a stream handle that must be used in subsequent client API invocations. The caller must call nabtoStreamClose when the stream (handle) is no longer needed. An open session handle must have been created prior to calling this function.
 
 {:#declaration}
 ## DECLARATION
@@ -95,11 +95,11 @@ nabto_status_t nabtoStreamOpen(NabtoStreamHandle* handle, NabtoSessionsnabto_sta
 ```
 void helloNabtoStream() {
 	nabto_status_t st; // in all of the below: handle error and
-	abort if st != NABTO_OK 
+	abort if st != NABTO_OK
 	st = nabtoStartup(NULL);
 
 	nabto_session_t session;
-	nabto_status_t st = nabtoOpenSession(&session, 
+	nabto_status_t st = nabtoOpenSession(&session,
 	“user@example.org”, “12345678”);
 
 	nabto_stream_t stream;

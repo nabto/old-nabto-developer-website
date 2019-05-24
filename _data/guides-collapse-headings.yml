@@ -1,5 +1,6 @@
 - collapse_heading: 'Get started'
-  sub_collapse: 
+  sub_collapse:
+    - 'Creating a Solution'
     - 'IOS Clients'
     - 'Android Clients'
     - 'Cordova/Ionic Clients'

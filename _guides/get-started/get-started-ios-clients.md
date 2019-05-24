@@ -1,6 +1,6 @@
 ---
 layout: documentation
-title: 'Get started for ios Clients'
+title: 'Get started for ios Clients YYY'
 permalink:  /developer/guides/get-started/get-started-ios-clients.html
 page_data_flag: guides
 position: 1
@@ -13,7 +13,7 @@ in_subcollapse: 'IOS Clients'
 
 # Smooth Scroll List
 anchor-list:
-  - title: 'Get started for ios Clients'
+  - title: 'Get started for ios Clients XXX'
     id: '#ios-client'
   - title: 'This is one anchor'
     id: '#this-is-one-anchor'
@@ -26,7 +26,7 @@ anchor-list:
 ---
 
 {:#ios-client}
-# Get started for ios Clients
+# Get started for ios Clients ZZZ
 Lorem ipsum dolor inverti est em ipsum dolor inverti conversa symposis dolor inverti est em ipsum dolor inverti conversa symposis
 
 Lorem ipsum dolor inverti est em ipsum dolor inverti conversa symposis dolor inverti est em ipsum dolor inverti conversa symposis Lorem ipsum dolor inverti est em ipsum dolor inverti conversa symposis dolor inverti est em ipsum dolor inverti conversa symposis

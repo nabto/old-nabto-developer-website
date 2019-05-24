@@ -48,11 +48,11 @@ intro_list:
 
   - hrefTitle: '#'
     img_src: 'images/get-started-plain-c.svg'
-    img_alt: 'Get started for Plain C'
+    img_alt: 'Get started for Plain C Clients'
     img_width: '93'
     img_height: '94'
     href1: 'developer/guides/get-started/get-started-plain-c-clients.html'
-    heading: 'Get started for Plain C'
+    heading: 'Get started for Plain C Clients'
     href2: 'developer/api-reference/plain-c-client-sdk/collapse-post.html'
     linkAPI: 'API Reference'
     href3: 'developer/tutorials/plain-c-tutorial.html'

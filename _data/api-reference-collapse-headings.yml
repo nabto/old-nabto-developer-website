@@ -1,5 +1,5 @@
 - collapse_heading: 'iOS Client SDK'
-  sub_collapse: 
+  sub_collapse:
     - 'Profile Management'
     - 'RPC'
     - 'Streaming'
@@ -16,7 +16,8 @@
     - 'Collapse item'
 - collapse_heading: 'Plain C Client SDK'
   sub_collapse:
-    - 'Collapse item'
+    - 'Context and Connection'
+    - 'Streaming'
 - collapse_heading: 'Embedded Device SDK'
   sub_collapse:
     - 'Collapse item'

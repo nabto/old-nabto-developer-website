@@ -23,6 +23,7 @@ collections:
     output: true
   api-reference:
     output: true
+    permalink: /:collection/:name
   tutorials:
     output: true
 
@@ -38,3 +39,26 @@ exclude:
   - vendor/gems/
   - vendor/ruby/
   - scss
+
+defaults:
+  -
+    scope:
+      path: "_api-reference"
+    values:
+      page_data_flag: api-reference
+      layout: documentation
+      anchor-list:
+        - title: 'Description'
+          id: '#description'
+
+        - title: 'Declaration'
+          id: '#declaration'
+
+        - title: 'Parameters'
+          id: '#parameters'
+
+        - title: 'Return values'
+          id: '#return-values'
+
+        - title: 'Example'
+          id: '#example'
