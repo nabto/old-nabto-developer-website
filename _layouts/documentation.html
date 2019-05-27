@@ -14,11 +14,11 @@ layout: default
 				{% for nested_page in link.nested_pages %}
 					{% if nested_page.url == false %}
 						<li class="{% if page.url == link.url %}active{% endif %}">
-							<a href="{{ site.url }}{{ link.url}}">{{ nested_page.title }}</strong></a>
+							<a href="{{ site.baseurl }}{{ link.url}}">{{ nested_page.title }}</strong></a>
 						</li>
 					{% else %}
 						<li class="{% if page.url contains nested_page.url and page.url != false %}active{% elsif nested_page.url contains page.page_data_flag %}active{% endif %}">
-							<a href="{{ site.url }}{{ link.url | remove: ".html" }}{{ nested_page.url }}">{{ nested_page.title }}</strong></a>
+							<a href="{{ site.baseurl }}{{ link.url | remove: ".html" }}{{ nested_page.url }}">{{ nested_page.title }}</strong></a>
 						</li>
 					{% endif %}
 				{% endfor %}

@@ -1,9 +1,9 @@
 <ul class="intro-list {{ include.add_class }} row list-unstyled mb-0">
     {% for item in include.content_data %}
     <li>
-        <a href="{{ site.url }}/{{ item.href }}" class="intro-card d-flex">
+        <a href="{{ site.baseurl }}/{{ item.href }}" class="intro-card d-flex">
             <div class="entry-icon">
-                <img src="{{ site.url }}/{{ item.img_src }}" alt="{{ item.img_alt }}" width="{{ item.img_width }}" height="{{ item.img_height }}">
+                <img src="{{ site.baseurl }}/{{ item.img_src }}" alt="{{ item.img_alt }}" width="{{ item.img_width }}" height="{{ item.img_height }}">
             </div>
             <div class="entry-body">
                 <h3>{{ item.heading }}</h3>

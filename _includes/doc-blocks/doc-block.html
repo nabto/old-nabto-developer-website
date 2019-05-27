@@ -5,7 +5,7 @@
 			{% for guide in sort_collection %}
 				{% if guide.in_collapse == false %}
 					<li>
-						<a class="{% if guide.permalink == page.permalink %}active{% endif %}" href="{{ site.url }}{{ guide.permalink }}">{{ guide.title }}</a>
+						<a class="{% if guide.permalink == page.permalink %}active{% endif %}" href="{{ site.baseurl }}{{ guide.permalink }}">{{ guide.title }}</a>
 					</li>
 				{% endif %}
 			{% endfor %}
@@ -19,7 +19,7 @@
 							{% for item in sort_collection %}
 								{% if item.in_collapse == collapse.collapse_heading and item.in_subcollapse == false %}
 									<li>
-										<a class="{% if item.permalink == page.permalink %}active{% endif %}" href="{{ site.url }}{{ item.permalink }}">{{ item.title }}</a>
+										<a class="{% if item.permalink == page.permalink %}active{% endif %}" href="{{ site.baseurl }}{{ item.permalink }}">{{ item.title }}</a>
 									</li>
 								{% endif %}
 							{% endfor %}
@@ -33,7 +33,7 @@
 											{% for item in sort_collection %}
 												{% if sub_item == item.in_subcollapse and item.in_collapse == collapse.collapse_heading  %}
 												<li>
-													<a class="{% if item.permalink == page.permalink %}active{% endif %}" href="{{ site.url }}{{ item.permalink }}">{{item.title}}</a>
+													<a class="{% if item.permalink == page.permalink %}active{% endif %}" href="{{ site.baseurl }}{{ item.permalink }}">{{item.title}}</a>
 												</li>
 												{% endif %}
 											{% endfor %}

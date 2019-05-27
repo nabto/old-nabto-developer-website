@@ -3,16 +3,16 @@
 	<li>
 		<div class="intro-card d-flex">
 			<div class="entry-icon">
-				<img src="{{ site.url }}/{{ item.img_src }}" alt="{{ item.img_alt }}" width="{{ item.img_width }}" height="{{ item.img_height }}">
+				<img src="{{ site.baseurl }}/{{ item.img_src }}" alt="{{ item.img_alt }}" width="{{ item.img_width }}" height="{{ item.img_height }}">
 			</div>
 			<div class="entry-body">
 				<h3>
-					<a href="{{ site.url }}/{{ item.href1 }}">{{ item.heading }}</a>
+					<a href="{{ site.baseurl }}/{{ item.href1 }}">{{ item.heading }}</a>
 				</h3>
 				<p>
-					<a href="{{ site.url }}/{{ item.href2 }}">{{ item.linkAPI }}</a> </p>
+					<a href="{{ site.baseurl }}/{{ item.href2 }}">{{ item.linkAPI }}</a> </p>
 				<p>
-					<a href="{{ site.url }}/{{ item.href3 }}">{{ item.linkTutorial }}</a>
+					<a href="{{ site.baseurl }}/{{ item.href3 }}">{{ item.linkTutorial }}</a>
 				</p>
 			</div>
 		</div>
