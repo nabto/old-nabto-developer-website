@@ -16,6 +16,7 @@
     - 'Collapse item'
 - collapse_heading: 'Plain C Client SDK'
   sub_collapse:
+    - 'Futures'
     - 'Context and Connection'
     - 'Streaming'
 - collapse_heading: 'Embedded Device SDK'

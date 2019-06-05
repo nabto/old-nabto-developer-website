@@ -1,12 +1,12 @@
 ---
 title: 'nabto_client_stream_write'
 permalink: /developer/api-reference/plain-c-client-sdk/streaming/nabto_client_stream_write.html
-position: 30
+position: 40
 in_collapse: 'Plain C Client SDK'
 in_subcollapse: 'Streaming'
 ---
 
-# nabto_client_context_write
+# nabto_client_stream_write
 
 {:#description}
 ## DESCRIPTION

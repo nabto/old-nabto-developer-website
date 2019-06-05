@@ -92,7 +92,7 @@ nabto_status_t nabtoStreamOpen(NabtoStreamHandle* handle, NabtoSessionsnabto_sta
 {:#example}
 ## EXAMPLE
 
-```
+```c
 void helloNabtoStream() {
 	nabto_status_t st; // in all of the below: handle error and
 	abort if st != NABTO_OK
